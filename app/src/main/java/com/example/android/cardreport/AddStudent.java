@@ -56,31 +56,6 @@ public class AddStudent extends AppCompatActivity {
 
 
 
-        setClick();
-    }
-
-    public void setClick() {
-
-
-        Button btnclick = (Button) findViewById(R.id.btnCalculate);
-
-        btnclick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                w = Integer.parseInt(etsub1.getText().toString());
-                r = Integer.parseInt(etsub2.getText().toString());
-                e = Integer.parseInt(etsub3.getText().toString());
-                g = Integer.parseInt(etsub4.getText().toString());
-
-                int x = w + r + e + g;
-                int average = (int) (x * 100.0f) / 600;
-                System.out.println(average);
-
-            }
-        });
-
-
     }
 
     public void insertStudent() {
